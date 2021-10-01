@@ -14,9 +14,6 @@ module.exports = function (eleventyConfig) {
     return markdown.render(value);
   });
 
-  // rebuild on CSS changes
-  eleventyConfig.addWatchTarget('./src/_includes/css/');
-
   // Markdown
   eleventyConfig.setLibrary(
     'md',
@@ -27,11 +24,6 @@ module.exports = function (eleventyConfig) {
       typographer: true
     })
   )
-
-  //create collections
-  eleventyConfig.addCollection('sections', async (collection) => {
-    return collection.getFilteredByGlob('./src/sections/*.md');
-  });
 
   // STATIC FILES
   eleventyConfig.addPassthroughCopy({ './src/static/': '/' });
@@ -52,7 +44,7 @@ module.exports = function (eleventyConfig) {
   return {
     dir: {
       input: 'src',
-      output: 'public',
+      output: '_site',
       data: './_data',
       includes: './_includes',
       layouts: './_layouts'

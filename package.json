@@ -3,19 +3,38 @@
   "version": "0.0.1",
   "description": "A simple landing page built with 11ty and Tailwind CSS",
   "scripts": {
-    "serve": "eleventy --serve",
-    "deploy": "eleventy"
+    "clean": "rimraf _site",
+    "start": "cross-env NODE_ENV=development npm-run-all -l clean --parallel start:* ",
+    "start:eleventy": "eleventy --serve",
+    "start:tailwind": "nodemon -e css,json -x npm run build:tailwind -w ./src/_includes/css/_page.css -w ./tailwind.config.js",
+    "start:gulp": "nodemon -e js -x npm run build:gulp -w ./gulpfile.js",
+    "build": "cross-env NODE_ENV=production npm-run-all -l clean build:*",
+    "build:eleventy": "eleventy",
+    "build:tailwind": "tailwind build -i ./src/_includes/css/_page.css -o ./_site/css/site.min.css --minify",
+    "build:gulp": "gulp"
   },
   "author": "ttntm",
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-img": "^0.5.0",
+    "@11ty/eleventy-navigation": "^0.1.6",
     "@11ty/eleventy-plugin-rss": "^1.1.1",
     "autoprefixer": "^10.2.5",
     "cssnano": "^4.1.10",
     "html-minifier": "^4.0.0",
     "postcss": "^8.2.9",
     "postcss-import": "^14.0.0",
-    "tailwindcss": "^2.0.4"
+    "tailwindcss": "^2.0.4",
+    "nodemon": "^2.0.7",
+    "npm-run-all": "^4.1.5",
+    "gulp": "4.0.2",
+    "gulp-concat": "2.6.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-run-command": "^0.0.10",
+    "gulp-uglify": "3.0.2",
+    "gulp-uglifycss": "^1.1.0",
+    "rimraf": "3.0.0",
+    "cross-env": "^7.0.3"
   }
 }

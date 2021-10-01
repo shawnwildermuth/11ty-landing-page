@@ -1,40 +1,22 @@
-<script src="https://unpkg.com/popper.js@1"></script>
-<script src="https://unpkg.com/tippy.js@4"></script>
-<script>
-  function navToggle() {
-    let btn = document.getElementById('menuBtn');
-    let nav = document.getElementById('menu');
-
-    btn.classList.toggle('open');
-    nav.classList.toggle('flex');
-    nav.classList.toggle('hidden');
-  }
-
-  window.addEventListener('scroll', function () {
-    let btt = document.getElementById('btt');
-
-    if (window.scrollY >= 1080) {
-      btt.classList.remove('hidden');
-      btt.classList.add('block');
-    } else {
-      btt.classList.add('hidden');
-      btt.classList.remove('block');
-    }
-  });
-
-  console.log('Code/Design: ttntm.me'); // credit where credit is due
-
-  const template = document.getElementById('followTip');
-  const container = document.createElement('div');
-
-  container.appendChild(document.importNode(template.content, true));
-
-  tippy('#follow', {
-    content: container.innerHTML,
-    animation: 'scale',
-    duration: 250,
-    arrow: true,
-    placement: 'bottom',
-    interactive: true,
-  });
-</script>
+<!-- All External JavaScript Links Here -->
+<script src="/lib/vendor/jquery-1.12.4.min.js"></script>
+<script src="/lib/popper.min.js"></script>
+<script src="/lib/bootstrap.min.js"></script>
+<script src="/lib/ajax-form.js"></script>
+<script src="/lib/imagesloaded.pkgd.min.js"></script>
+<script src="/lib/isotope.pkgd.min.js"></script>
+<script src="/lib/jquery.meanmenu.min.js"></script>
+<script src="/lib/jquery.counterup.min.js"></script>
+<script src="/lib/jquery.waypoints.min.js"></script>
+<script src="/lib/jquery.magnific-popup.min.js"></script>
+<script src="/lib/owl.carousel.min.js"></script>
+<script src="/lib/tilt.jquery.js"></script>
+<script src="/lib/bootstrap-datepicker.min.js"></script>
+<script src="/lib/jquery.nice-select.min.js"></script>
+<script src="/lib/jquery.paroller.min.js"></script>
+<script src="/lib/aos.js"></script>
+<script src="/lib/slick.min.js"></script>
+<script src="/lib/wow.min.js"></script>
+<script src="/lib/plugins.js"></script>
+<script src="/lib/main.js"></script>
+<!-- All External JavaScript Links Here End -->

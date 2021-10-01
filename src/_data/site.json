@@ -1,17 +1,17 @@
 {
-  "baseURL": "https://awesome11ty.ttntm.me",
-  "author": "AWE.SOME",
-  "description": "AWE.SOMEty - A Landing Page Template for 11ty",
-  "title": "AWE.SOMEty - A Landing Page Template for 11ty",
+  "baseURL": "https://helloworldfilm.com",
+  "author": "Hello World Film, LLC",
+  "description": "",
+  "title": "Hello World Films",
   "language": "en",
   "social": [
     {
       "title": "Twitter",
-      "url": "https://twitter.com/#"
+      "url": "https://twitter.com/helloworldfilm"
     },
     {
-      "title": "LinkedIn",
-      "url": "https://linkedin.com/company/#"
+      "title": "IMDB",
+      "url": "https://imdb.com/title/tt0120338"
     }
   ]
 }

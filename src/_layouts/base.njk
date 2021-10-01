@@ -1,11 +1,276 @@
 <!DOCTYPE html>
 <html lang="{{ site.language }}">
-<head>
-  {% include "head.njk" %}
-</head>
-<body id="top" class="font-sans text-gray-800 bg-gray-100">
-  {{ content | safe }}
-  {% include "footer.njk" %}
-  {% include "js.njk" %}
-</body>
+  <head></head>
+  <body id="top" class="font-sans text-gray-800 bg-gray-100"></body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "head.njk" %}
+
+    <!-- All Style Links Here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/custom-animation.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="fonts/flaticon.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/meanmenu.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- All Style Links Here End -->
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header header--padding header--transparrent">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-xl-3 col-lg-4 col-md-5 col-5">
+            <div class="header--left d-flex align-items-center">
+              <div class="header--logo">
+                <a href="index.html"><img src="img/logo/logo.png" alt="Mekar"></a>
+              </div>
+              <div class="header--lang d-none d-md-block">
+                <ul>
+                  <li>
+                    <a href="#">English</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-9 col-lg-8 col-md-7 d-flex justify-content-end align-items-center col-7">
+            <div class="navbar--main">
+              <nav id="mobile-menu">
+                <ul>
+                  <li class="drop">
+                    <a href="index.html">Home</a>
+                    <ul class="submenu">
+                      <li>
+                        <a href="index.html">Home One</a>
+                      </li>
+                      <li>
+                        <a href="index-2.html">Home Two</a>
+                      </li>
+                      <li>
+                        <a href="index-3.html">Home Three</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="drop">
+                    <a href="about-us.html">About</a>
+                    <ul class="submenu">
+                      <li>
+                        <a href="about-us.html">About Us</a>
+                      </li>
+                      <li>
+                        <a href="about-me.html">About Me</a>
+                      </li>
+                      <li>
+                        <a href="timeline.html">Timeline</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="drop">
+                    <a href="project-details.html">Project</a>
+                    <ul class="submenu">
+                      <li>
+                        <a href="movie-listing-01.html">Movie Grid View 01</a>
+                      </li>
+                      <li>
+                        <a href="movie-listing-02.html">Movie Grid View 02</a>
+                      </li>
+                      <li>
+                        <a href="movie-listing-03.html">Movie Grid View 03</a>
+                      </li>
+                      <li>
+                        <a href="movie-listing-04.html">Movie Grid View 04</a>
+                      </li>
+                      <li>
+                        <a href="project-details-dark.html">Project Light</a>
+                      </li>
+                      <li>
+                        <a href="project-details-dark.html">Project Dark</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="drop">
+                    <a href="services-01.html">Services</a>
+                    <ul class="submenu">
+                      <li>
+                        <a href="services-01.html">Services 01</a>
+                      </li>
+                      <li>
+                        <a href="services-02.html">Services 02</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="drop">
+                    <a href="#">Pages</a>
+                    <ul class="submenu">
+                      <li>
+                        <a href="gallery-01.html">Gallery 01</a>
+                      </li>
+                      <li>
+                        <a href="gallery-02.html">Gallery 02</a>
+                      </li>
+                      <li>
+                        <a href="gallery-03.html">Gallery 03</a>
+                      </li>
+                      <li>
+                        <a href="gallery-03.html">Gallery Light</a>
+                      </li>
+                      <li>
+                        <a href="timeline.html">Timeline</a>
+                      </li>
+                      <li>
+                        <a href="team.html">Team</a>
+                      </li>
+                      <li>
+                        <a href="faq.html">FAQ</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="drop">
+                    <a href="#">Blog</a>
+                    <ul class="submenu">
+                      <li>
+                        <a href="blog-grid.html">Blog Grid</a>
+                      </li>
+                      <li>
+                        <a href="blog-standard.html">Blog Standard</a>
+                      </li>
+                      <li>
+                        <a href="blog-details.html">Blog Details</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="contacts.html">Contact</a>
+                  </li>
+                  <li>
+                    <a class="header--search nav-search search-trigger" href="#">
+                      <i class="far fa-search"></i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header--right">
+              <ul>
+                <li>
+                  <a href="movie-listing-01.html" class="btn btn--theme btn--line d-lg-none d-xl-block d-none d-md-block">View studio</a>
+                </li>
+                <li>
+                  <div class="sidebar">
+                    <a href="#" class="sidebar--burger menu-tigger">
+                      <span></span></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mobile-menu mobile-menu-h4"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu Overlay -->
+      <div id="menu-overlay" class="menu-overlay main-menu">
+        <div class="menu-close">
+          <i class="fal fa-times"></i> Close</div>
+        <nav class="primary-nav">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about-me.html">About Me</a>
+            </li>
+            <li>
+              <a href="project-details.html">Portfolio</a>
+            </li>
+            <li>
+              <a href="services-01.html">Services</a>
+            </li>
+            <li>
+              <a href="blog-details.html">Blog</a>
+            </li>
+            <li>
+              <a href="contacts.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="company-info">
+          <a href="#" class="info-email link-underline cursor-link">hello@bdevs.com</a><br>
+          <a href="#" class="info-tel link-underline cursor-link">(888) 524-3624</a>
+          <div class="info-address">
+            <p>6WWH556 - issued in California (CA) in year 2012.</p>
+          </div>
+          <ul class="sm-links">
+            <li>
+              <a href="#" class="cursor-link">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="cursor-link">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="cursor-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="cursor-link">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="offcanvas-overly"></div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Wrapper -->
+    <main class="main-wrapper">
+      {{ content | safe }}
+    </main>
+    <!-- Main Wrapper End -->
+
+    {% include "footer.njk" %}
+
+    <!-- Fullscreen search -->
+    <div class="search-wrap">
+      <div class="search-inner">
+        <i class="fas fa-times search-close" id="search-close"></i>
+        <div class="search-cell">
+          <form method="get">
+            <div class="search-field-holder">
+              <input type="search" class="main-search-input" placeholder="Search Your Keyword...">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- end fullscreen search -->
+
+    <!-- Scroll Top Button -->
+    <button class="scroll-top tran3s">
+      <i class="far fa-long-arrow-up"></i>
+    </button>
+
+    {% include "js.njk" %}
+
+  </body>
 </html>
